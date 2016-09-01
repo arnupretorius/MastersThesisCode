@@ -1,0 +1,38 @@
+paper,author,year,r_data,r_subsample_var,r_split_points,r_voting,r_ensemble,a1_rotation,a2_var_select,b1_single_impurity,b2_multiple_impurity,b3_oblique,b4_axis,c1_weighted_vote,c2_tree_subset_selection,d1_var_weights,d2_regularisation,d3_memory
+mutiple decision trees,Kwok and Carter,1988,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+Random Decision Forests,Ho,1995,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Bagging Predictors,Breiman,1996,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Joint Induction of Shape Features and Tree Classifiers,Amit and Geman,1997,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+An Experimental Comparison of Three Methods for Constructing Ensembles of Decision Trees,Dietterich,1998,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+The Random Subspace Method for Constructing Decision Forests,Ho,1998,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0
+Limiting the Number of Trees in Random Forests,Latinne et al.,2001,1,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0
+PERT – Perfect Random Tree Ensembles,Cutler and Zhao,2001,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+Random Forests,Breiman,2001,1,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0
+Improving Random Forests,Robnik-Sikonja,2004,1,1,0,0,0,0,0,1,1,0,1,1,0,1,0,0
+Decision Forests with Oblique Decision Trees,Tan and Dowe,2006,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0
+Rotation Forest: A New Classifier Ensemble Method,Rodriquez et al.,2006,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+Dynamic Integration with Random Forests,Tsymbal et al.,2006,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0
+Extremely randomized trees,Geurts et al.,2006,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+Estimating Class Probabilities in Random Forests,Bostrom,2007,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0
+Meta Random Forests,Boinee et al.,2008,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,1
+Enriched random forests,Amaratunga et al.,2008,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+Discriminant Random Forests,Hanley,2008,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+RotBoost: A technique for combining Rotation Forest and AdaBoost,Zhang and Zhang,2008,1,0,0,0,0,1,0,1,0,0,1,1,0,0,0,1
+Using conditional inference forests to identify the factors affecting crash severity on arterial corridors,Das et al.,2009,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Forest-RK: A New Random Forest Induction Method,Bernard et al.,2009,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+On the Selection of Decision Trees in Random Forests,Bernard et al.,2009,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,1
+On Oblique Random Forests,Menze et al.,2011,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+GARF: Towards Self-optimised Random Forests,Bader-El-Den and Gaber,2012,1,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0
+Feature Selection via Regularized Trees,Deng and Runger,2012,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1,1
+Classifying Very High-Dimensional Data with Random Forests Built from Small Subspaces,Xu et al.,2012,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+Modifications of the construction and voting mechanisms of the Random Forests Algorithm,Tripoliti et al.,2013,1,1,0,0,0,1,0,1,1,0,1,1,1,0,0,0
+Gene selection with guided regularized random forest,Deng and Runger,2013,1,1,0,0,0,0,0,1,0,0,1,0,0,1,1,1
+Guided Random Forest in the RRF Package,Deng,2013,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+Stratified sampling for feature subspace selection in random forests for high dimensional data,Ye et al.,2013,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+Random Forests with ensemble of feature spaces,Zhang and Suganthan,2014,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+Random Rotation Ensembles,Blaser and Fryzlewicz,2015,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+Unbiased Feature Selection in Learning Random Forests for High-Dimensional Data,Nguyen et al.,2015,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+Disjunctive normal random forests,Seyedhosseini and Tasdizen,2015,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,1
+On Extreme Pruning of Random Forest Ensembles for Real-time Predictive Applications,Fawagreh et al.,2015,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+Casting Random Forests as Artificial Neural Networks (and Profiting from It),Welbl,2014,1,1,0,0,0,0,0,1,0,0,1,1,0,0,1,1
+Variable selection using Random Forests,Genuer et al.,2012,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0
