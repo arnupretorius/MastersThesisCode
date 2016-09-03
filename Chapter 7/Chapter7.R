@@ -3,8 +3,8 @@
 #####################################
 
 # Check for missing packages and install if missing
-list.of.packages <- c("dplyr","latex2exp", "mlbench", "ggplot2", "caret", "doSNOW", "lattice",
-                      "obliqueRF", "MASS", "stargazer", "rotationForest", "randomForest",
+list.of.packages <- c("MASS","dplyr","latex2exp", "mlbench", "ggplot2", "caret", "doSNOW", "lattice",
+                      "obliqueRF", "stargazer", "rotationForest", "randomForest",
                       "scmamp", "surv2sampleComp", "ElemStatLearn", "hmeasure")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
@@ -52,7 +52,7 @@ stargazer(softTable, summary = FALSE, rownames=FALSE)
 # ---------------------------------------------------------------------------
 data <- read.csv("RFComparisonsData.csv")
 lop <- arrange(data, year) %>% select(paper_title, author, year, journal) %>%
-      group_by(paper_title) %>% distinct()
+      group_by(paper_title) %>% distinct(.keep_all=TRUE)
 lop <- as.data.frame(lop)
 colnames(lop) <- c("Paper title", "Author(s)", "Year", "Journal")
 stargazer(lop, summary = FALSE, rownames = FALSE)
@@ -120,7 +120,7 @@ dsFrame <- data.frame(dataset=allDS, freqUsed=allDSCount)
 dsFrame <- dsFrame[order(dsFrame$freqUsed, decreasing = TRUE),]
 
 # get dataset characteristics
-dataChar <- data %>% select(dataset, dataset_size, num_inputs, classes) %>% distinct()
+dataChar <- data %>% select(dataset, dataset_size, num_inputs, classes) %>% distinct(.keep_all=TRUE)
 dataChar <- merge(dsFrame, dataChar)
 dataChar <- dataChar[order(dataChar$freqUsed, decreasing = TRUE),]
 
@@ -235,7 +235,7 @@ quadeTest(rCompareMat)
 ########################################################################
 # ---------------------------------------------------------------------------
 # plot evaluation method used
-evalsData <- data %>% select(paper_title, comparison) %>% distinct()
+evalsData <- data %>% select(paper_title, comparison) %>% distinct(.keep_all=TRUE)
 lims <- unique(evalsData$comparison)[c(1,2,4,3,5,6,7,8)]
 ggplot(evalsData, aes(x=comparison)) + geom_bar(fill="darkgreen") +
       xlab("Comparison method") + ylab("#Papers")+
@@ -513,7 +513,7 @@ ggplot(plotData, aes(x=names, y=rank)) +
       xlab("Algorithm") +
       scale_x_discrete(limits=names(sortAvgRanks))+ theme_bw()+
       theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))+
-      ggtitle("Hi-dimensional algorithms")
+      ggtitle("High-dimensional algorithms")
 
 # choose top 5 algorithms
 top5Algs <- names(sortAvgRanks)[1:5]
