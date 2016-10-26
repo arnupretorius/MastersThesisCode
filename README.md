@@ -1,2 +1,2 @@
 # Masters Thesis Code
-Thesis Code - Exploring the Jungle: an Investigation of Random Forests for Classification
+Thesis Code - Advances in Random Forests with Application to Classification
